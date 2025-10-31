@@ -1,0 +1,35 @@
+{
+    "productName": "liuyan",
+    "appId": "com.lhw.www",
+    "win": {
+        "icon": "electron/resource/images/code.ico",
+        "target": [
+            {
+                "target": "nsis",
+                "arch": [
+                    "x64"
+                ]
+            }
+        ]
+    },
+    "nsis": {
+        "oneClick": false,
+        "perMachine": true,
+        "allowToChangeInstallationDirectory": true
+    },
+    "asar": false,
+    "files": [
+        "dist",
+        "dist-electron",
+        "src/server/**",
+        "node_modules/mysql2/**",
+        "node_modules/express/**",
+        "node_modules/body-parser/**",
+        "node_modules/cors/**",
+        "node_modules/dotenv/**",
+        "node_modules/keytar/**"
+    ],
+    "directories": {
+        "output": "build"
+    }
+}
